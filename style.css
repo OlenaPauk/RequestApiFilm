@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+input {
+    width: 48%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+#name {
+    width: 35%;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+#deleteButton {
+    width: 10%;
+    height: 35px;
+    color: white;
+    background-color: red;
+    cursor: pointer;
+}
+
+#searchButton {
+    width: 40%;
+    height: 35px;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    /* margin-left: -40px; */
+}
+
+#moreButton {
+    width: 40%;
+    height: 35px;
+    color: white;
+    background-color: blue;
+    margin: 0 35%;
+    display: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#film {
+    width: 90%;
+    min-height: 300px;
+    /* border: 1px solid black; */
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.filmPoster {
+    width: 205px;
+    min-height: 300px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    width: 203px;
+    height: 290px;
+    /* margin-top: 10px; */
+}
+
+#titleFilm {
+    width: 203px;
+    min-height: 60px;
+    background-color: darkgray;
+    text-align: center;
+    margin-top: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.typeFilm, .yearFilm {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 25px;
+}
+
+#detailsButton {
+    width: 100%;
+    height: 35px;
+    color: white;
+    background-color: green;
+    margin-top: 5px;
+    border-color: green;
+    cursor: pointer;
+}
+
+#filmInf {
+    width: 1100px;
+    min-height: 600px;
+    border: 1px solid gray;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5px;
+    display: none;
+    z-index: 3;
+}
+
+#filmInform {
+    width: 95%;
+    min-height: 95%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.imageInf {
+    width: 380px;
+    height: 530px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+#container {
+    width: 600px;
+    min-height: 500px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#logo {
+    width: 100%;
+    min-height: 40px;
+    margin-top: 7px;
+    background-color: gray;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#div-color {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(195, 195, 195);
+    display: none;
+}
+
+#pg, #plot, #wriiten, #director, #actors, #boxOffice, #awards, #ratings {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.source-value {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:600px) {
+    #name {
+        width: 90%;
+        margin-bottom: 5px;
+    }
+    #searchButton {
+        width: 90%;
+    }
+}
