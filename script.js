@@ -9,7 +9,7 @@ function search(page) {
     }
     let name = getId('name').value;
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', `http://www.omdbapi.com/?s=${name}&page=${page}&apikey=cfc44db`, false);
+    xhr.open('GET', `https://www.omdbapi.com/?s=${name}&page=${page}&apikey=cfc44db`, false);
     xhr.send();
     let data = JSON.parse(xhr.responseText);
     console.log(data);
@@ -49,7 +49,7 @@ function del() {
 
 function details(id) {
     let xhr = new XMLHttpRequest();
-    xhr.open('GET', `http://www.omdbapi.com/?i=${id}&apikey=cfc44db&plot=full`, false);
+    xhr.open('GET', `https://www.omdbapi.com/?i=${id}&apikey=cfc44db&plot=full`, false);
     xhr.send();
     let data = JSON.parse(xhr.responseText);
     console.log(data);
